@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The survey</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <h1 id="title"> THE SURVEY FORM</h1>
+        <p id="description">This survey is about me, Sinethemba Zitha. About your experience with me.</p>
+
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Joe"
+                        required /></label>
+                <label for="Surname" id="Surname-label">Surname: <input id="Surname" name="Surname" type="text"
+                        placeholder="Jonase" /></label>
+                <label for="number" id="number-label">Age(years): <input id="number" name="number" type="number"
+                        min="10" max="34" placeholder="21" required /></label>
+                <label for="Relation" id="Relation-label">Relationship with me: <input id="Relation" name="Relation"
+                        type="text" required /></label>
+                <label for="email" id="email-label">Email: <input id="email" name="email" type="email"
+                        placeholder="JoeJonase@gmail.com" required /></label>
+                <label for="password" id="password-label">Password: <input id="password" name="password" type="password"
+                        placeholder="akje@#T124" required /></label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Your experience Zitha: </legend>
+                <label for="positive-experience"><input id="positive-experience" name="experience" type="radio" class="inline" value="positive" checked> Positive</label>
+                <label for="negative-experience"><input id="negative-experience" name="experience" type="radio" class="inline" value="negative"> Negative</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select what is true about Zitha </legend>
+                <label for="grew-up"><input id="grew-up" name="duration" type="checkbox" class="inline" value="grew-up" checked> He grew up in KZN</label>
+                <label for="born"><input id="born" name="duration" type="checkbox" class="inline" value="born"> He was born in 1999</label>
+                <label for="birth-month"><input id="birth-month" name="duration" type="checkbox" class="inline" value="birth-month"> October is his birth month</label>
+                <label for="loves-cake"><input id="loves-cake" name="duration" type="checkbox" class="inline" value="loves-cake"> He loves cake</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="dropdown">Select Personality:</label>
+                <select id="dropdown" name="personality">
+                    <option>(select 2 choices)</option>
+                    <option>Zitha is kind</option>
+                    <option>Zitha a beast</option>
+                    <option>Zitha is mean</option>
+                    <option>Zitha is a snake</option>
+                    <option>Zitha is all the above</option>
+                    <option>Zitha is none of the above</option>
+                </select>
+
+                <label for="Message">Message to Zitha: </label>
+                <textarea id="Message" name="Message" rows="4" cols="70" placeholder="I appreciate the time we have spent together..."></textarea>
+            </fieldset>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+
+    <hr class="bottom-line" />
+
+    <footer>
+        <p>
+            No Copyright @ <em>I am zitha</em>
+        </p>
+    </footer>
+
+</body>
+
+</html>
